@@ -87,17 +87,18 @@ Leave this terminal running.
 This terminal will run the main script that fetches data, applies bonuses, and sends updates back to the server.
 
 
+```bash
 python main.py
-
+```
 
 The client will execute the process and print the final report to the console:
 
---- Employee Salary Manager ---
+### Employee Salary Manager 
 
 Fetching employee data from the local API...
 Found 3 employees.
 
---- Applying Bonuses and Generating Report ---
+### Applying Bonuses and Generating Report 
 Alice      | Final Salary: 33000.0
 Bob        | Final Salary: 35200.0
 Charlie    | Final Salary: 38500.0
@@ -114,15 +115,9 @@ The application operates on a simple client-server model:
 The api_server.py script acts as the backend. It reads from and writes to the employees.json file and exposes two endpoints:
 
 GET /employees: To provide a list of all employees.
-
 POST /employee/update: To update the salary of a specific employee.
-
 The main.py script is the client. It performs the following sequence of operations:
-
 It calls fetch_employees() to make a GET request to the server to get the employee data.
-
 It processes this data locally, applying a bonus to each employee's salary.
-
 It prints a formatted report to the console.
-
 Finally, it calls post_salary_update() in a loop to send a POST request for each employee, telling the server to save the new salary.
