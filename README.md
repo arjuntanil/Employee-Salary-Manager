@@ -14,21 +14,6 @@ A simple Python application to demonstrate a client-server architecture for mana
 
 ---
 
-## 📁 Project Structure
-
-employee_salary_manager/
-│
-├── venv/
-├── api_server.py       # The Flask API server
-├── main.py             # The main client application
-├── employee_module.py  # Contains the Employee class definition
-├── salary_utils.py     # Utility functions for making API calls
-├── employees.json      # The JSON file acting as a simple database
-├── .gitignore          # Specifies files for Git to ignore
-└── requirements.txt    # Project dependencies
-
----
-
 ## ⚙️ Setup and Installation
 
 Follow these steps to get the project running on your local machine.
