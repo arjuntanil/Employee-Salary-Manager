@@ -74,8 +74,9 @@ This project requires two terminals running simultaneously: one for the server a
 This terminal will run the Flask server that listens for requests.
 
 ```bash
-```
 python api_server.py
+```
+
 
 You should see output indicating the server is running, like this:
 
