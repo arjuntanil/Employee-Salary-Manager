@@ -42,8 +42,7 @@ Follow these steps to get the project running on your local machine.
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
-    cd your-repo-name
+    git clone [https://github.com/arjuntanil/Employee-Salary-Manager.git](https://github.com/arjuntanil/Employee-Salary-Manager.git)
     ```
 
 2.  **Create and activate a virtual environment:**
