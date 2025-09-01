@@ -103,21 +103,21 @@ Alice      | Final Salary: 33000.0
 Bob        | Final Salary: 35200.0
 Charlie    | Final Salary: 38500.0
 
---- Sending Updates to the API ---
+### Sending Updates to the API
 Successfully updated salary for Alice. Status: success
 Successfully updated salary for Bob. Status: success
 Successfully updated salary for Charlie. Status: success
 
---- Process Complete ---
+### Process Complete
 🛠️ How It Works
 The application operates on a simple client-server model:
 
 The api_server.py script acts as the backend. It reads from and writes to the employees.json file and exposes two endpoints:
 
-GET /employees: To provide a list of all employees.
-POST /employee/update: To update the salary of a specific employee.
-The main.py script is the client. It performs the following sequence of operations:
-It calls fetch_employees() to make a GET request to the server to get the employee data.
-It processes this data locally, applying a bonus to each employee's salary.
-It prints a formatted report to the console.
-Finally, it calls post_salary_update() in a loop to send a POST request for each employee, telling the server to save the new salary.
+ * GET /employees: To provide a list of all employees.
+ * POST /employee/update: To update the salary of a specific employee.
+ * The main.py script is the client. It performs the following sequence of operations:
+ * It calls fetch_employees() to make a GET request to the server to get the employee data.
+ * It processes this data locally, applying a bonus to each employee's salary.
+ * It prints a formatted report to the console.
+ * Finally, it calls post_salary_update() in a loop to send a POST request for each employee, telling the server to save the new salary.
